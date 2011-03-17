@@ -910,6 +910,7 @@ public class MediaPlaybackService extends Service {
         i.putExtra("artist", getArtistName());
         i.putExtra("album",getAlbumName());
         i.putExtra("track", getTrackName());
+        i.putExtra("playing", isPlaying());
         i.putExtra("pos", position());
         i.putExtra("dur", duration());
         sendBroadcast(i);
